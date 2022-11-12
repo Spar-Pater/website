@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="nl-nl">
+    {{- partial "head.html" . -}}
+    <body>
+        <main class="grid-c">
+            {{- partial "header.html" . -}}
+            {{- partial "sidebar.html" . -}}
+            {{- block "main" . }}{{- end }}
+            {{- partial "footer.html" . -}}
+        </main>
+        {{- partial "svg.html" . -}}
+        {{- partial "script.html" . -}}
+   </body>
+</html>

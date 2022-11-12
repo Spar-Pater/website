@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Boodschappen on Spar Pater</title>
+    <link>https://sparpater.nl/tags/boodschappen/</link>
+    <description>Recent content in Boodschappen on Spar Pater</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>nl-nl</language><atom:link href="https://sparpater.nl/tags/boodschappen/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spar Pater</title>
+      <link>https://sparpater.nl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sparpater.nl/</guid>
+      <description>Supermarkt Exloo</description>
+    </item>
+    
+  </channel>
+</rss>

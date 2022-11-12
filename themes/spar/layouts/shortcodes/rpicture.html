@@ -1,0 +1,38 @@
+{{ $link := .Get "src" }}
+{{ $size := .Get "size" }}
+{{ $screen := .Get "screen" }}
+{{ $id := .Get "id" }}
+{{ $bubble := .Get "bubble" }}
+
+
+{{ with $image := resources.Get $link }}
+
+{{ $imagewebp := $image.Resize (printf "%dx%d webp picture" .Width .Height) }}
+{{ $imagejpg := $image.Resize (printf "%dx%d jpg picture" .Width .Height) }}
+
+{{ $imagewebp2 := $image.Resize (printf "%dx%d webp picture" (div .Width 2) (div .Height 2)) }}
+{{ $imagejpg2 := $image.Resize (printf "%dx%d jpg picture" (div .Width 2) (div .Height 2)) }}
+{{ $imagewebp3 := $image.Resize (printf "%dx%d webp picture" (div .Width 3) (div .Height 3)) }}
+{{ $imagejpg3 := $image.Resize (printf "%dx%d jpg picture" (div .Width 3) (div .Height 3)) }}
+{{ $imagewebp4 := $image.Resize (printf "%dx%d webp picture" (div .Width 4) (div .Height 4)) }}
+{{ $imagejpg4 := $image.Resize (printf "%dx%d jpg picture" (div .Width 4) (div .Height 4)) }}
+<div id="{{ $id }}">
+    {{ if $bubble }}
+    <svg>
+        <use href="#bubble"></use>
+    </svg>
+    {{ end }}
+    <img src="{{ .RelPermalink }}" alt="" 
+    srcset="
+    {{ $imagewebp4.RelPermalink}} {{ $imagewebp4.Width }}w,
+    {{ $imagejpg4.RelPermalink}} {{ $imagejpg4.Width }}w,
+    {{ $imagewebp3.RelPermalink}} {{ $imagewebp3.Width }}w,
+    {{ $imagejpg3.RelPermalink}} {{ $imagejpg3.Width }}w,
+    {{ $imagewebp2.RelPermalink}} {{ $imagewebp2.Width }}w,
+    {{ $imagejpg2.RelPermalink}} {{ $imagejpg2.Width }}w,
+    {{ $imagewebp.RelPermalink}} {{ $imagewebp.Width }}w,
+    {{ $imagejpg.RelPermalink}} {{ $imagejpg.Width }}w"
+    sizes="{{ $screen }}">
+    {{ end }}
+</div>
+

@@ -1,0 +1,14 @@
+{{ define "main" }}
+    <article class="pages">
+        <section class="title-wrap">
+            {{- partial "image-resize.html" . -}}
+            <section class="inline">
+                <h1>{{ .Title }}</h1>
+                <span class="description">{{ .Description }}</span>
+            </section>
+        </section>
+        <section class="content">
+            {{ .Content }}
+        </section>
+    </article>
+{{ end }}

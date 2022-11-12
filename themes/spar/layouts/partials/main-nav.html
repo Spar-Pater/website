@@ -1,0 +1,48 @@
+<nav class="main-nav burger">
+    {{ $currentPage := . }}
+    <ul class="resetlist flex nav-burger">
+        <li class="button-burger green min-w100 center">
+            <a class="flex nav-link" href="http://exloo.spar.nl/" target="_blank" rel="noopener noreferrer">Webwinkel</a>
+        </li>
+        {{ range .Site.Menus.main }}
+        <li class="button-burger white min-w100 center">    
+            <a class="flex nav-link {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+        <li class="button-burger white min-w48 center">
+            <a class="flex" href="tel:+31591549082">
+                <span class="text">Bel ons</span>
+                <span class="button logo">
+                    <svg>
+                        <use href="#phone"></use>
+                    </svg>
+                </span>
+            </a>
+        </li>
+        <li class="button-burger white min-w48 center">
+            <a class="flex" href="mailto:info@sparpater.nl">  
+                <span class="text">Mail ons</span>
+                <span class="button logo">
+                    <svg>
+                        <use href="#mail"></use>
+                    </svg>
+                </span>
+            </a>
+        </li>
+        <li class="button-burger white min-w48 center">
+            <a class="flex" href="https://goo.gl/maps/q2uZGozRkatV57XM9" target="_blank" rel="noopener noreferrer">  
+                <span class="text">Route</span>
+                <span class="button logo">
+                    <svg>
+                        <use href="#location"></use>
+                    </svg>
+                </span>
+            </a>
+        </li>
+    </ul>
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</nav>

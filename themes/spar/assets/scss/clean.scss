@@ -1,0 +1,94 @@
+body {
+    margin: 0
+}
+@font-face {
+    font-family: Omnes;
+    src: 
+        url('/fonts/omnes-regularspar-webfont.woff') format('woff'),
+        url('/fonts/omnesmediumspar-webfont.woff') format('woff'),
+        url('/fonts/omnessemiboldspar-webfont.woff') format('woff');
+}
+html {
+    scroll-behavior: smooth;
+    font-family: Omnes, Arial, sans-serif;
+}
+html,
+a {
+    color: $primary;
+}
+.hideit {
+    display: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: $accent-gr;
+}
+
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+}
+@mixin md {
+    // Medium devices
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+}
+
+@mixin lg {
+    // Large devices
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+}
+@mixin xl {
+    // Extra large devices
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+}
+@mixin rwd($screen) {
+    // custom devices
+    @media (min-width: $screen+"px") {
+        @content;
+    }
+}
+
+
+
+// @mixin button-white {
+//     min-width: 200px;
+//     a {
+//         border: 2px solid $accent-lines-white;
+//         border-radius: 6px;
+//         color: $primary;
+//         text-decoration: none;
+//         padding: 1rem;
+//         display: flex;
+//         gap: 1rem;
+//         align-items: center;
+//         min-height: 36px;
+//         line-height: 0.6rem;
+//         .wrap-icon, svg {
+//             height: 16px;
+//             width: 16px;
+//         }
+//         svg {
+//             fill: $accent;
+//         }
+//         .home-nav-text {
+//             font-weight: bold;
+//             .info {
+//                 font-weight: normal;
+//                 font-size: 0.6rem;
+//             }
+//         }
+//     }
+//     :hover {
+//         background-color: $accent-lines-white;
+//     }
+// }

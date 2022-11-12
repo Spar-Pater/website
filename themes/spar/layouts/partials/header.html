@@ -1,0 +1,16 @@
+{{ if ne .IsHome true }}
+    <header class="grid-c grid-area">
+        <div id="nav-wrap" class="">
+            {{- partial "main-nav.html" . -}}
+        </div>
+        <div id="logo-wrap" class="logo-wrap min-h42">
+            <a href="/about" id="logo">
+                <picture>
+                <source media="(min-width: 1200px)" srcset="{{ $image := resources.Get "images/logo-horizontal.svg" }} {{ $image.RelPermalink }}">
+                <source srcset="{{ $image := resources.Get "images/logo-vertical.svg" }}{{ $image.RelPermalink }}">
+                <img id="logo-img" class="min-h42" src="{{ $image := resources.Get "images/logo-vertical.svg" }}{{ $image.RelPermalink }}" alt="Spar Logo" style="max-width: 300px;">
+            </picture>
+        </a>
+    </div>
+</header>
+{{ end }}

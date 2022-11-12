@@ -1,0 +1,23 @@
+{{ $i := .Resources.GetMatch .Params.image }}
+{{ if $i }}
+{{ $Wd := $i.Width }}
+<figure>
+    <img src="{{ $i.RelPermalink }} "
+    {{ $sizes := slice 100 150 300 450 600 900 1200 1500 1800 2100 2400 2700 3000 }}
+    {{ $srcset := slice }}
+    {{ range $sizes }}
+        {{ if lt (mul . 1.2) $Wd }}
+        {{ $thumb := $i.Resize (printf "%dx webp picture" .) }}
+        {{ $srcset = $srcset | append (printf ("%s %dw") $thumb.RelPermalink .) }}
+        {{ $thumb := $i.Resize (printf "%dx jpg" .) }}
+        {{ $srcset = $srcset | append (printf ("%s %dw") $thumb.RelPermalink .) }}
+        {{ end }}
+    {{ end }}
+    {{ $thumb := $i.Resize (printf "%dx%d webp" $i.Width $i.Height) }}
+    {{ $srcset = $srcset | append (printf ("%s %dw") $thumb.RelPermalink $Wd) }}
+    {{ $thumb := $i.Resize (printf "%dx%d jpg" $i.Width $i.Height) }}
+    {{ $srcset = $srcset | append (printf ("%s %dw") $thumb.RelPermalink $Wd) }}
+    {{ (printf " srcset=\"%s\"" (delimit $srcset ", ")) | safeHTMLAttr }}
+    >
+</figure>
+{{ end }}

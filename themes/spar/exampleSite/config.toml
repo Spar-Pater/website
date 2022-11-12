@@ -1,7 +1,8 @@
 baseURL           = "https://sparpater.nl/"
 languageCode      = "nl-nl"
 title             = "Spar Pater"
-theme             = "spar"
+themesDir         = "../.."
+theme             = "Spar"
 
 [params]
 
