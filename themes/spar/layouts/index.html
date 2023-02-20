@@ -10,12 +10,24 @@
         {{ $imagejpg3 := $image.Resize "340x340 jpg picture" }}
         {{ $imagewebp4 := $image.Resize "170x170 webp picture" }}
         {{ $imagejpg4 := $image.Resize "170x170 jpg picture" }}
+        {{ $imagewebp5 := $image.Resize "150x150 webp picture" }}
+        {{ $imagejpg5 := $image.Resize "150x150 jpg picture" }}
+        {{ $imagewebp6 := $image.Resize "100x100 webp picture" }}
+        {{ $imagejpg6 := $image.Resize "100x100 jpg picture" }}
+        {{ $imagewebp7 := $image.Resize "70x70 webp picture" }}
+        {{ $imagejpg7 := $image.Resize "70x70 jpg picture" }}
         <a class="bubble ondernemer large" href="/">
             <svg>
                 <use href="#bubble"></use>
             </svg>
             <img src="{{ $imagejpg.RelPermalink }}" alt="" 
                 srcset="
+                {{ $imagewebp7.RelPermalink}} {{ $imagewebp7.Width }}w,
+                {{ $imagejpg7.RelPermalink}} {{ $imagejpg7.Width }}w,
+                {{ $imagewebp6.RelPermalink}} {{ $imagewebp6.Width }}w,
+                {{ $imagejpg6.RelPermalink}} {{ $imagejpg6.Width }}w,
+                {{ $imagewebp5.RelPermalink}} {{ $imagewebp5.Width }}w,
+                {{ $imagejpg5.RelPermalink}} {{ $imagejpg5.Width }}w,
                 {{ $imagewebp4.RelPermalink}} {{ $imagewebp4.Width }}w,
                 {{ $imagejpg4.RelPermalink}} {{ $imagejpg4.Width }}w,
                 {{ $imagewebp3.RelPermalink}} {{ $imagewebp3.Width }}w,
