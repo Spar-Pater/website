@@ -1,7 +1,7 @@
 {{ define "main" }}
 <main id="home" class="grid-c">
     <section id="hero" class="grid-ct">
-        {{ with $image := resources.Get "images/ondernemers.webp" }}
+        {{ with $image := resources.Get "images/ondernemers.png" }}
         {{ $imagewebp := $image.Resize "680x webp picture" }}
         {{ $imagejpg := $image.Resize "680x jpg picture" }}
         {{ $imagewebp2 := $image.Resize "510x webp picture" }}
