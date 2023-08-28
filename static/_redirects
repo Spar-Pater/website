@@ -2,10 +2,13 @@
 /webshop https://exloo.spar.nl 301
 /webwinkel https://exloo.spar.nl 301
 /lunch https://exloo.spar.nl/foodservice/lunch/bestellen 301
-/handleidingen https://gofile.me/7dKkb/2e8na3swi
-/handleiding https://sparpater.nl/handleidingen
+/handleidingen https://gofile.me/7dKkb/2e8na3swi 301
+/handleiding https://sparpater.nl/handleidingen 301
 
 ## snelkoppelingen
-/haccp https://haccp.sparpater.nl
-/bankstorting https://obp/obp_web
+/haccp https://haccp.sparpater.nl 301
+/bankstorting https://obp/obp_web 301
 
+## Vacatures
+/vacature/allroundmedewerker https://samenwerkenaanspar.nl/vacature/1790/vacature/?lang=nl 301
+/alroundmedewerker https://samenwerkenaanspar.nl/vacature/1790/vacature/?lang=nl 301
