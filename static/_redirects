@@ -13,10 +13,11 @@
 /webwinkel https://exloo.spar.nl 301
 
 ## snelkoppelingen
-/geld https://obp/obp_web 301
-/foodservice https://app.powerbi.com/Redirect?action=OpenReport&appId=38a88f91-7bd5-429c-b3ed-bf22e6e63672&reportObjectId=aebee884-e895-49ad-9dd1-a7ac89469ef0&ctid=b79cb1d9-e744-4ccf-a2cd-babc72844be8&reportPage=ReportSection1c6bc83f215199e1fd86&visual=aac20de1e3cd0bb8f9c2&height=503.96&width=1772.56&bookmarkGuid=875306fc-8b7d-4453-af84-447689ae1f1c&pbi_source=shareVisual 301
 /cijfers https://app.powerbi.com/groups/me/apps/38a88f91-7bd5-429c-b3ed-bf22e6e63672/reports/aebee884-e895-49ad-9dd1-a7ac89469ef0/ReportSection?experience=power-bi 301
+/foodservice https://app.powerbi.com/Redirect?action=OpenReport&appId=38a88f91-7bd5-429c-b3ed-bf22e6e63672&reportObjectId=aebee884-e895-49ad-9dd1-a7ac89469ef0&ctid=b79cb1d9-e744-4ccf-a2cd-babc72844be8&reportPage=ReportSection1c6bc83f215199e1fd86&visual=aac20de1e3cd0bb8f9c2&height=503.96&width=1772.56&bookmarkGuid=875306fc-8b7d-4453-af84-447689ae1f1c&pbi_source=shareVisual 301
+/geld https://obp/obp_web 301
 /haccp https://haccp.sparpater.nl 301
+/saba https://spar.axi.nl/apex/f?p=AXI_RS:LOGIN_DESKTOP&c=3179426457616163 301
 
 ## Vacatures
 /allroundmedewerker https://samenwerkenaanspar.nl/vacature/1790/vacature/?lang=nl 301
