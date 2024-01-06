@@ -2,8 +2,7 @@
 title: 'Spar Pater'
 #date: 
 description: "Over ons"
-cover:
-    image: images/fruit_schaal.jpg
+image: images/fruit_schaal.jpg
 #categories: ['']
 #tags: ['Supermarkt', 'Exloo', 'Boodschappen', 'Buursupper']
 ---
