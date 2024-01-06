@@ -1,63 +1,65 @@
 {{ if ne .IsHome true }}
 <footer class="flex flex-wrap">
-    <article id="adres">
-        <address>
-            <h2>Spar Pater</h2>
-            Hoofdstraat 49<br>
-            7875 AX Exloo<br>
-            <a href="tel:+31591549082">0591 549082</a><br>
-            <a href="mailto:info@sparpater.nl">info@sparpater.nl</a>
-        </address>
+    <section class="footer content">
+        <article id="adres">
+            <address>
+                <h2>Spar Pater</h2>
+                Hoofdstraat 49<br>
+                7875 AX Exloo<br>
+                <a href="tel:+31591549082">0591 549082</a><br>
+                <a href="mailto:info@sparpater.nl">info@sparpater.nl</a>
+            </address>
 
-    </article>
-    <article id="openinghours">
-        <h2>Onze openingstijden zijn:</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th></th>
-                    <th>open</th>
-                    <th>gesloten</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr id="monday">
-                    <th>Maandag</th>
-                    <td>{{ .Site.Params.open.monday }}</td>
-                    <td>{{ .Site.Params.closed.monday }}</td>
-                </tr>
-                <tr id="tuesday">
-                    <th>Dinsdag</th>
-                    <td>{{ .Site.Params.open.tuesday }}</td>
-                    <td>{{ .Site.Params.closed.tuesday }}</td>
-                </tr>
-                <tr id="wednesday">
-                    <th>Woensdag</th>
-                    <td>{{ .Site.Params.open.wednesday }}</td>
-                    <td>{{ .Site.Params.closed.wednesday }}</td>
-                </tr>
-                <tr id="thursday">
-                    <th>Donderdag</th>
-                    <td>{{ .Site.Params.open.thursday }}</td>
-                    <td>{{ .Site.Params.closed.thursday }}</td>
-                </tr>
-                <tr id="friday">
-                    <th>Vrijdag</th>
-                    <td>{{ .Site.Params.open.friday }}</td>
-                    <td>{{ .Site.Params.closed.friday }}</td>
-                </tr>
-                <tr id="saturday">
-                    <th>Zaterdag</th>
-                    <td>{{ .Site.Params.open.saturday }}</td>
-                    <td>{{ .Site.Params.closed.saturday }}</td>
-                </tr>
-                <tr id="sunday">
-                    <th>Zondag</th>
-                    <td>{{ .Site.Params.open.sunday }}</td>
-                    <td>{{ .Site.Params.closed.sunday }}</td>
-                </tr>
-            </tbody>
-        </table>
-    </article>
+        </article>
+        <article id="openinghours">
+            <h2>Onze openingstijden zijn:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>open</th>
+                        <th>gesloten</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="monday">
+                        <th>Maandag</th>
+                        <td>{{ .Site.Params.open.monday }}</td>
+                        <td>{{ .Site.Params.closed.monday }}</td>
+                    </tr>
+                    <tr id="tuesday">
+                        <th>Dinsdag</th>
+                        <td>{{ .Site.Params.open.tuesday }}</td>
+                        <td>{{ .Site.Params.closed.tuesday }}</td>
+                    </tr>
+                    <tr id="wednesday">
+                        <th>Woensdag</th>
+                        <td>{{ .Site.Params.open.wednesday }}</td>
+                        <td>{{ .Site.Params.closed.wednesday }}</td>
+                    </tr>
+                    <tr id="thursday">
+                        <th>Donderdag</th>
+                        <td>{{ .Site.Params.open.thursday }}</td>
+                        <td>{{ .Site.Params.closed.thursday }}</td>
+                    </tr>
+                    <tr id="friday">
+                        <th>Vrijdag</th>
+                        <td>{{ .Site.Params.open.friday }}</td>
+                        <td>{{ .Site.Params.closed.friday }}</td>
+                    </tr>
+                    <tr id="saturday">
+                        <th>Zaterdag</th>
+                        <td>{{ .Site.Params.open.saturday }}</td>
+                        <td>{{ .Site.Params.closed.saturday }}</td>
+                    </tr>
+                    <tr id="sunday">
+                        <th>Zondag</th>
+                        <td>{{ .Site.Params.open.sunday }}</td>
+                        <td>{{ .Site.Params.closed.sunday }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </section>
 </footer>
 {{ end }}
