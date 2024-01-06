@@ -1,6 +1,0 @@
-[submodule "content"]
-	path = content
-	url = git@github.com:dpater1986/spar-website-content.git
-[submodule "themes/spar"]
-	path = themes/spar
-	url = git@github.com:dpater1986/spar-website-theme.git

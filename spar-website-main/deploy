@@ -1,4 +1,0 @@
-#!/bin/sh
-hugo && rsync -avz --delete public/ web.acdc.supermarkt:html/
-
-exit 0
